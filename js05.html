@@ -1,0 +1,37 @@
+<script>
+
+// 한줄이라도 실행 시킬수 있으면 함수이다.
+
+function program(){
+
+    let result = false;
+    const correct = Math.floor(Math.random() * 1000);
+    const answer = prompt(`${correct}을 입력해주세요.`);
+
+    result = correct == answer;
+
+    if(result){
+        alert("정답 입니다");
+    }
+    else{
+        alert("오답 임니다");
+    }
+
+    for(let index = 2; index<100; index = index *2){
+        console.log(index)
+    }
+    
+    let temp = 2;
+
+    while(temp < 100){
+        console.log(temp);
+        temp = temp * 2
+    }
+
+}
+
+program();
+
+
+
+</script>
