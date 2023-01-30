@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="btn" on>커스텀 버튼</div>
+    <div id="content">내용</div>
+</body>
+<script>
+   const btn = document.getElementById("btn");
+//    const fucn = () => console.log("함수");
+//    func();
+   
+   
+    //이벤트 추가
+    //  btn.onclick = (() => {
+    //     const content = document.getElementById("content");
+
+    //      if(content.style.display == "none"){
+    //          content.style.display = "bolck";
+    //      }
+    //      else{
+    //         content.style.display = "none";
+    //      }
+    //  }; //btn.onclick
+
+       btn.onclick = (() => {
+         const content = document.getElementById("content");
+
+          if(content.style.display == "none"){
+              content.style.display = "bolck";
+          }
+          else{
+             content.style.display = "none";
+          }
+      }); //btn.onclick
+</script>
+</html>
